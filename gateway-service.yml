@@ -11,10 +11,10 @@ eureka:
 zuul:
   routes:
     flash-card-service:
-      path: /flash-card/*
+      path: /flash-card/**
       strip-prefix: true
       service_id: flash-card-service
     user-service:
-      path: /users/*
+      path: /users/**
       strip-prefix: true
       service_id: user-service
