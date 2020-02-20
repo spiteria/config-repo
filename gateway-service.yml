@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 eureka:
   client:
@@ -14,3 +14,7 @@ zuul:
       path: /flash-card/*
       strip-prefix: true
       service_id: flash-card-service
+    user-service:
+      path: /users/*
+      strip-prefix: true
+      service_id: user-service
